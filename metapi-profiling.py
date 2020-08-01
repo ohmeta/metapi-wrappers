@@ -20,7 +20,6 @@ COMPUTE_COVERAGE_TEMPLATE = """bowtie2 \
 -X {fragment} \
 2>> {log} | \
 sambamba view -q --nthreads {threads} \
---compression-level 6 \
 --format bam \
 --compression-level 6 \
 --sam-input /dev/stdin \
